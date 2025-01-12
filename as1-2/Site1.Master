@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="as1_2.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        body
+        {
+            background-image: linear-gradient(to right, #0d98ba, #007c50);
+        }
+        form{
+            border-style: hidden;
+            border-radius: 25px;
+            border-width: thin;
+            background-image: linear-gradient(to right, #003f5d, #004b57);
+            color:white;
+            height:100%;
+            width:100%;
+        }
+        .unm{
+            text-align:left;
+        }
+        .fp{
+            text-align:right;
+        }
+        </style>
+</head>
+
+<body >
+        <center>
+
+        <br/> <br/> <br/> <br/>
+    <form id="form1" runat="server">
+        <div style="width: 539px; height: 394px;">
+            Sign in<br />
+            <br />
+            Sign in with your username and password<br />
+            <br />
+            <div class="unm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Username<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="TextBox1" runat="server" ForeColor="#999999" Height="25px" Width="469px">Enter Username</asp:TextBox>
+                <br />
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Your Password<br />
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="TextBox2" runat="server" ForeColor="#999999" Height="25px" Width="469px">Enter Password</asp:TextBox>
+            <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:CheckBox ID="CheckBox1" runat="server" Checked="True" Text="Remember me" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server" ForeColor="#3399FF" Text="Forget Password?"></asp:Label>
+                <br />
+                <br />
+            
+           
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" BackColor="Black" ForeColor="White" Height="37px" Text="Login" Width="473px" style="margin-left: 0px" />
+            </div>
+            <br />
+            Not a Member?
+            <asp:Label ID="Label2" runat="server" ForeColor="#3399FF" Text="Register here!"></asp:Label>
+            <br />
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    </center>
+</body>
+</html>
